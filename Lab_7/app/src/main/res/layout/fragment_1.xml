@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#DF3F3F"
+    tools:context=".FragmentFirst">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editFragmentSurname"
+            android:layout_width="280dp"
+            android:layout_height="73dp"
+            android:ems="20"
+            android:inputType="text"
+            android:text="Surname"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editFragmentName"
+            app:layout_constraintVertical_bias="0.064"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editFragmentName"
+            android:layout_width="282dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="116dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.519"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonToFragment2"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="36dp"
+            android:text="To fragment 2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editFragmentSurname" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
